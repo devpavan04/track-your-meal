@@ -1,0 +1,101 @@
+.container {
+  padding-top: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-blue {
+  background: royalblue;
+  color: #fff;
+}
+
+.bg-green {
+  background: green;
+  color: #fff;
+  border: none;
+}
+
+.bg-red {
+  background: red;
+  color: #fff;
+  border: none;
+}
+
+.bg-purple {
+  background: purple;
+  color: #fff;
+  float: right;
+}
+
+.bg-black {
+  background: black;
+  color: #fff;
+}
+
+#updateItem,
+#deleteItem,
+#backBtn {
+  display: none;
+}
+
+button.bg-blue:hover,
+button.bg-purple:hover {
+  color: #fff;
+}
+
+button.bg-blue:focus,
+button.bg-red:focus,
+button.bg-green:focus,
+button.bg-purple:focus {
+  color: #fff;
+}
+
+button.bg-green:hover {
+  color: #fff;
+}
+
+button.bg-red:hover {
+  color: #fff;
+}
+
+button.bg-black:hover {
+  color: #fff;
+}
+
+.totalCalories {
+  clear: both;
+  padding: 3rem 0 0;
+}
+
+tr td i {
+  cursor: pointer;
+}
+
+tr th,
+tr td {
+  text-align: center;
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  button {
+    display: inline-block;
+  }
+
+  button.bg-blue,
+  button.bg-red,
+  button.bg-black {
+    float: left;
+    width: 48%;
+  }
+
+  button.bg-green {
+    float: right;
+    width: 50%;
+  }
+
+  button.bg-purple {
+    width: 48%;
+  }
+}

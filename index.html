@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+      integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Track Your Meal</title>
+  </head>
+  <body>
+    <div class="container">
+      <h4 class="text-center">TRACK YOUR MEALS</h4>
+      <form id="inputValues">
+        <div id="meal">
+          <label for="meal">Meal :</label>
+          <input type="text" name="meal" id="mealName" class="u-full-width" />
+        </div>
+        <div id="calories">
+          <label for="calories">Calories :</label>
+          <input type="number" id="mealCalories" class="u-full-width" />
+        </div>
+        <button class="btn bg-blue" id="addItem">Add Item</button>
+        <button class="btn bg-green" id="updateItem">Update Item</button>
+        <button class="btn bg-red" id="deleteItem">Delete Meal</button>
+        <button class="btn bg-purple" id="clearAll">Clear All</button>
+        <button class="btn bg-black u-pull-right" id="backBtn">Back</button>
+        <div class="totalCalories"></div>
+      </form>
+      <table class="u-full-width" id="mealList">
+        <thead>
+          <tr>
+            <th>Meal</th>
+            <th>Calories</th>
+            <th>Edit</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
